@@ -1,0 +1,428 @@
+/* Reset */
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: verdana, Genova, Iahoma, sans-serif;
+}
+
+
+/* Header */
+
+header{
+	height: 100px;
+	background: #4d4d5c;
+	padding: 0 50px;
+	color: #FFF;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo{
+	text-transform: uppercase;
+	color: #6cc091;
+	font-weight: 200;
+}
+
+.menu a{
+	color: #FFF;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 0 10px;
+	transition: 0.4s;
+}
+
+.showingMenu, .hiddenMenu{
+	font-size: 30px;
+	cursor: pointer;
+	display: none;
+	transition: 0.4s;
+}
+
+.showingMenu{
+	order: 1;
+}
+
+.menu a:hover, .showingMenu:hover, .hiddenMenu:hover{
+	color: #6cc091;
+}
+
+#check{
+	display: none;
+}
+
+/* Banner */
+
+#banner{
+	padding: 0 50px;
+	background-image: url(./utils/banner_header.jpg);
+	height: 45vh;
+	background-size: cover;
+	background-position: center;
+}
+
+#banner::before{
+	content: '';
+	/*background: rgba(77, 77, 92, 0.6);*/
+	position: absolute;
+	width: 100%;
+	height: 45vh;
+	left: 0;
+}
+
+.containtBanner h3{
+	font-size: 30px;
+	font-weight: 400;
+	padding: 10px 0px;
+}
+
+.containtBanner h3 span{
+	font-weight: 600;
+}
+
+.containtBanner{
+	position: relative;
+	color: #FFF;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.buttonBegin{
+	text-decoration: none;
+	color: #FFF;
+	border: 1px solid #6cc091;
+	padding: 20px 40px;
+	align-self: baseline;
+}
+
+.buttonBegin:hover{
+	background: #6cc09070;
+	transition: all 0.4s;
+}
+
+/* BLOG */
+
+#blog{
+	padding: 50px 50px;
+	display: block;
+	justify-content: center;
+}
+
+
+#blog div{
+	padding: 30px 30px;
+}
+
+#blog div h4{
+	color: #0a130e;
+	font-size: 20px;
+	margin: 15px 0px;
+	text-align: center;
+}
+
+#blog div h2{
+	color: #0a130e;
+	font-size: 18px;
+	margin: 15px 0px;
+	text-align: center;
+}
+
+#blog div p{
+	color: #15261d;
+	font-size: 15px;
+	text-align: justify-all;
+}
+
+#blog div li{
+	color: #15261d;
+	font-size: 15px;
+	text-align: justify-all;
+}
+
+.buttons{
+	display: inline-block;
+	text-decoration: none;
+	color: #6cc091;
+	padding: 10px 30px;
+	border: 3px solid #6cc091;
+	border-radius: 30px;
+	margin-top: 15px;
+	transition: all 0.4s;
+}
+
+.buttons:hover{
+	background: #6cc091;
+	color: #FFF;
+}
+
+/* Icons */
+
+#iconHome img{
+	width:20%;	
+}
+
+#iconGames img{
+	width:15.5%;	
+}
+
+#iconBlog img{
+	width:18%;	
+}
+
+#icons{
+	padding: 0px 50px;
+	background: rgba(77, 77, 92, 0.6);;
+}
+
+.containtIcons{
+	padding: 50px 50px 0px 50px;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.containtIcons div{
+	flex: 1;
+	margin: 20px 0px;
+	border-right: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+#iconResponsive{
+	border: none;
+}
+
+.containtIcons div i{
+	color: #6cc091;
+}
+
+.containtIcons div h6{
+	color: #FFF;
+	font-size: 20px;
+	font-weight: 100;
+	margin: 10px 0px;
+	transition: 0.4s;
+}
+
+.containtIcons div h6:hover{
+	color: #0a130e;
+}
+
+.containtIcons a{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.containtIcons div p{
+	color: rgba(255, 255, 255, 0.55);
+	font-size: 15px;
+}
+
+.buttonIcons{
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+/* Form Application */
+
+#contacts{
+	background: #6cc091;
+	padding: 50px 0px;
+	color: #FFF;
+}
+
+#contacts h4{
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+
+#contacts form{
+	max-width: 80%;
+	margin: 0px auto;
+}
+
+.dataForm{
+	display: flex;
+}
+
+.dataForm div{
+	padding: 10px;
+	flex: 1;
+}
+
+form label{
+	display: block;
+	margin-bottom: 10px;
+}
+
+form input, form textarea{
+	background: #6cc091;
+	border-radius: 10px;
+	border: 2px solid #8dcca9;
+	padding: 10px 5px;
+	outline: 0;
+	color: #FFF;
+	width: 100%;
+}
+
+form input:focus, form textarea:focus{
+	border-color: #4bae77;
+	box-shadow: 0px 0px 0px 1px #4bae77;
+}
+
+form input::placeholder, form textarea::placeholder{
+	color: #FFF;
+}
+
+.message{
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+.buttonSend .buttons{
+	display: block;
+	border: 1px solid #FFF;
+	color: #FFF;
+	text-align: center;
+	transition: 0.4s;
+}
+
+.buttonSend .buttons:hover{
+	background: #4fa776ad;
+}
+
+/* Footer */
+
+footer{
+	background: #4d4d5c;
+	color: #cccccc4a;
+	text-align: center;
+	padding: 10px 0px;
+}
+
+
+
+/* Responsive */
+
+@media(max-width: 768px){
+
+	/* Header */
+	.showingMenu, .hiddenMenu{
+		display: block;
+	}
+
+	.containtBanner h3{
+		font-size: 20px;
+	}
+
+	.menu{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #4d4d5c;
+		/*left: 0;*/
+		right: -100%;
+		top:0;
+		text-align: center;
+		padding: 100px 0px;
+		z-index: 100;
+		transition: 0.8s;
+	}
+
+	.menu a{
+		display: block;
+		padding: 20px;
+	}
+
+	.hiddenMenu{
+		position: absolute;
+		top:40px;
+		right: 40px;
+	}
+
+	#check:checked ~ .menu{
+		right: 0;
+	}
+
+	/* Blog */
+	#blog{
+		flex-direction: column;
+		font-size: 10px;
+	}
+
+	#blog div p{
+		font-size: 10px;
+	}
+
+	#blog div li{
+		font-size: 10px;
+	}
+
+	#blog h4{
+		font-size: 10px;
+	}
+
+	#blog h2{
+		font-size: 10px;
+	}
+
+	/* Icons */
+	.containtIcons{
+		flex-direction: column;
+	}
+
+	.containtIcons div{
+		border: none;
+	}
+
+	/* Application form */
+	.dataForm{
+		flex-direction: column;
+	}
+}
+
+
+@media(max-width: 280px){
+
+	/* Header */
+	.containtBanner h3{
+		font-size: 18px;
+	}
+
+	/* Blog */
+
+	#blog div p{
+		font-size: 10px;
+	}
+
+	#blog div li{
+		font-size: 10px;
+	}
+
+	#blog h4{
+		font-size: 10px;
+	}
+
+	#blog h2{
+		font-size: 10px;
+	}
+
+	/* Icons */
+
+	#iconHome img{
+		width:40%;	
+	}
+
+	#iconGames img{
+		width:35.5%;	
+	}
+
+	#iconBlog img{
+		width:38%;	
+	}
+
+}
