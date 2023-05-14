@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel = "stylesheet" href = "chessGames.css">
+	<script src="mainChessGames.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/ajedrez.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.9.2.custom.min.js"></script>
+	<script type="text/javascript" src="js/touch.js"></script>
+	<script src="https://kit.fontawesome.com/e3cd12edda.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+<!--<link rel="stylesheet" type="text/css" href="css/smoothness/jquery-ui-1.9.2.custom.min.css">
+<link rel="shortcut icon"type="image/x-icon" href="favicon.ico"/>-->
+<script>
+	alert("White pieces move first");
+</script>
+	<title>Chess Game - Asterial</title>
+
+</head>
+
+<body>
+	
+	<header>
+		
+		<h2 class="logo">Asterial©</h2>
+		<input type="checkbox" id="check">
+		<label for="check" class="showingMenu">
+			
+			&#8801
+
+		</label>
+
+			<nav class="menu">
+
+		<a href="index.html">Home</a>
+		<a href="games.html">Games</a>
+		<a href="blog.html">Blog</a>
+		<label for="check" class="hiddenMenu">
+			
+			&#215
+
+		</label>
+
+		</nav>
+
+	</header>
+	
+	<section id="banner">
+		
+		<div class="containtBanner">
+			
+			<h3><span>CHESS GAME: </span>WEB DESING RESPONSIVE <br> MOBILE FRIENDLY</h3>
+			<a class="buttonBegin">BEGIN THE TRAVEL</a>
+
+		</div>
+
+	</section>
+
+	<section id="games">
+<body>
+	<div id="tablero" >
+		<div id="18" class="blanca" value="ocupada"> 
+			<img src='img/torreN.png' class='ficha torre fNegra torreN'>
+		</div>
+		<div id="28" class="negra" value="ocupada"> 
+			<img src='img/caballoN.png' class='ficha caballo fNegra caballoN'>
+		</div>
+		<div id="38" class="blanca" value="ocupada">
+			<img src='img/alfilN.png' class='ficha alfil fNegra alfilN'>
+		 </div>
+		<div id="48" class="negra" value="ocupada"> 
+			<img src='img/reinaN.png' class='ficha reina fNegra reinaN'>
+		</div>
+		<div id="58" class="blanca" value="ocupada"> 
+			<img src='img/reyN.png' class='ficha rey fNegra reyN'>
+		</div>
+		<div id="68" class="negra" value="ocupada">
+			<img src='img/alfilN.png' class='ficha alfil fNegra alfilN'>
+		 </div>
+		<div id="78" class="blanca" value="ocupada">
+			<img src='img/caballoN.png' class='ficha caballo fNegra caballoN'>
+		 </div>
+		<div id="88" class="negra" value="ocupada"> 
+			<img src='img/torreN.png' class='ficha torre fNegra torreN'>
+		</div>	
+		<br />
+		<div id="17" class="negra" value="ocupada">
+			<img src='img/peonN.png' class='ficha peonN fNegra '  value='false'>
+		 </div>
+		<div id="27" class="blanca" value="ocupada">
+		 	<img src='img/peonN.png' class='ficha peonN fNegra '  value='false'>
+		</div>
+		<div id="37" class="negra" value="ocupada">
+		 	<img src='img/peonN.png' class='ficha peonN fNegra '  value='false'>
+		</div>
+		<div id="47" class="blanca" value="ocupada"> 
+				<img src='img/peonN.png' class='ficha peonN fNegra '  value='false'>
+		</div>
+		<div id="57" class="negra" value="ocupada"> 
+				<img src='img/peonN.png' class='ficha peonN fNegra '  value='false'>
+		</div>
+		<div id="67" class="blanca" value="ocupada">
+				<img src='img/peonN.png' class='ficha peonN fNegra '  value='false'> 
+		</div>
+		<div id="77" class="negra" value="ocupada"> 
+				<img src='img/peonN.png' class='ficha peonN fNegra '  value='false'>
+		</div>
+		<div id="87" class="blanca" value="ocupada">
+		 	<img src='img/peonN.png' class='ficha peonN fNegra '  value='false'>
+		</div>	
+		<br />
+		<div id="16" class="blanca" value="vacia"> </div>
+		<div id="26" class="negra" value="vacia"> </div>
+		<div id="36" class="blanca" value="vacia"> </div>
+		<div id="46" class="negra" value="vacia"> </div>
+		<div id="56" class="blanca" value="vacia"> </div>
+		<div id="66" class="negra" value="vacia"> </div>
+		<div id="76" class="blanca" value="vacia"> </div>
+		<div id="86" class="negra" value="vacia"> </div>	
+		<br />
+		<div id="15" class="negra" value="vacia"> </div>
+		<div id="25" class="blanca" value="vacia"> </div>
+		<div id="35" class="negra" value="vacia"> </div>
+		<div id="45" class="blanca" value="vacia"> </div>
+		<div id="55" class="negra" value="vacia"> </div>
+		<div id="65" class="blanca" value="vacia"> </div>
+		<div id="75" class="negra" value="vacia"> </div>
+		<div id="85" class="blanca" value="vacia"> </div>	
+	    <br />
+		<div id="14" class="blanca" value="vacia"> </div>
+		<div id="24" class="negra" value="vacia"> </div>
+		<div id="34" class="blanca" value="vacia"> </div>
+		<div id="44" class="negra" value="vacia"> </div>
+		<div id="54" class="blanca" value="vacia"> </div>
+		<div id="64" class="negra" value="vacia"> </div>
+		<div id="74" class="blanca" value="vacia"> </div>
+		<div id="84" class="negra" value="vacia"> </div>	
+		<br />
+		<div id="13" class="negra" value="vacia"> </div>
+		<div id="23" class="blanca" value="vacia"> </div>
+		<div id="33" class="negra" value="vacia"> </div>
+		<div id="43" class="blanca" value="vacia"> </div>
+		<div id="53" class="negra" value="vacia"> </div>
+		<div id="63" class="blanca" value="vacia"> </div>
+		<div id="73" class="negra" value="vacia"> </div>
+		<div id="83" class="blanca" value="vacia"> </div>	
+		<br />
+		<div id="12" class="blanca" value="ocupada">
+			<img src='img/peonB.png' class='ficha peonB fBlanca ' value='false'>
+		 </div>
+		<div id="22" class="negra" value="ocupada">
+			<img src='img/peonB.png' class='ficha peonB fBlanca ' value='false'>
+		 </div>
+		<div id="32" class="blanca" value="ocupada">
+			<img src='img/peonB.png' class='ficha peonB fBlanca ' value='false'> 
+		</div>
+		<div id="42" class="negra" value="ocupada"> 
+			<img src='img/peonB.png' class='ficha peonB fBlanca ' value='false'>
+		</div>
+		<div id="52" class="blanca" value="ocupada"> 
+			<img src='img/peonB.png' class='ficha peonB fBlanca ' value='false'>
+		</div>
+		<div id="62" class="negra" value="ocupada"> 
+			<img src='img/peonB.png' class='ficha peonB fBlanca ' value='false'>
+		</div>
+		<div id="72" class="blanca" value="ocupada">
+			<img src='img/peonB.png' class='ficha peonB fBlanca ' value='false'>
+		 </div>
+		<div id="82" class="negra" value="ocupada"> 
+			<img src='img/peonB.png' class='ficha peonB fBlanca ' value='false'>
+		</div>	
+		<br />
+		<div id="11" class="negra" value="ocupada">
+			<img src='img/torreB.png' class='ficha torre fBlanca torreB'>
+		 </div>
+		<div id="21" class="blanca" value="ocupada"> 
+			<img src='img/caballoB.png' class='ficha caballo fBlanca caballoB'>
+		</div>
+		<div id="31" class="negra" value="ocupada"> 
+			<img src='img/alfilB.png' class='ficha alfil fBlanca alfilB'>
+		</div>
+		<div id="41" class="blanca" value="ocupada">
+			<img src='img/reinaB.png' class='ficha reina fBlanca reinaB'>
+		 </div>
+		<div id="51" class="negra" value="ocupada"> 
+			<img src='img/reyB.png' class='ficha rey fBlanca reyB'>
+		</div>
+		<div id="61" class="blanca" value="ocupada">
+			<img src='img/alfilB.png' class='ficha alfil fBlanca alfilB'>
+		 </div>
+		<div id="71" class="negra" value="ocupada">
+			<img src='img/caballoB.png' class='ficha caballo fBlanca caballoB'>
+		 </div>
+		<div id="81" class="blanca" value="ocupada">
+			<img src='img/torreB.png' class='ficha torre fBlanca torreB'>
+		 </div>				
+	</div>
+
+	<section id="matadas">
+
+	<!--<section id="info">
+		<img src="img/fichas.png"/>
+		<span></span>-->
+
+	</section>
+
+	<div id="turnos">
+		<p></p>
+	</div>
+
+	<div id="coronadaB">
+		<img src='img/torreB.png' class='ficha torre fBlanca torreB'>
+		<img src='img/caballoB.png' class='ficha caballo fBlanca caballoB'>
+		<img src='img/alfilB.png' class='ficha alfil fBlanca alfilB'>
+		<img src='img/reinaB.png' class='ficha reina fBlanca reinaB'>
+	</div>
+
+	<div id="coronadaN">
+		<img src='img/torreN.png' class='ficha torre fNegra torreN'>
+		<img src='img/caballoN.png' class='ficha caballo fNegra caballoN'>
+		<img src='img/alfilN.png' class='ficha alfil fNegra alfilN'>
+		<img src='img/reinaN.png' class='ficha reina fNegra reinaN'>
+	</div>
+
+</body>
+	</section>
+
+	<section id="icons">
+		
+		<div class="containtIcons">
+			
+			<div id="iconHome">
+				<img src="./utils/icon_home.svg">
+				<a href="index.html"><h6>Home</h6></a>
+				<p></p>
+			</div>
+
+			<div id="iconGames">
+				<img src="./utils/icon_games.svg">
+				<a href="games.html"><h6>Games</h6></a>
+				<p></p>
+			</div>
+
+			<div id="iconBlog">
+				<img src="./utils/icon_blog.svg">
+				<a href="blog.html"><h6>Blog</h6></a>
+				<p></p>
+			</div>
+
+		</div>
+
+		<div class="buttonIcons">
+
+			<a href="index.html" class="buttons">Go Home...</a>
+			
+		</div>
+
+	</section>
+
+	<section id="contacts">
+		
+		<h4>Contact application form</h4>
+
+		<form action="a">
+			
+			<div class="dataForm">
+
+				<div class="nameForm">
+
+					<label for="identificationName">Name / Last Name</label>
+
+					<input type="text" name="identificationName" id="identificationName" placeholder="Name / Last Name">
+				
+				</div>
+
+				<div class="email">
+
+					<label for="identificationEmail">@email</label>
+
+					<input type="email" name="identificationEmail" id="identificationEmail" placeholder="example@email.com">
+				
+				</div>
+			
+			</div>
+
+			<div class="message">
+
+				<label for="identificationMessage">Message</label>
+
+				<textarea name="identificationMessage" id="identificationMessage" cols="30" rows="10" placeholder="Message..."></textarea>
+				
+			</div>
+
+			<div class="buttonSend">
+				
+				<a href="form.html" class="buttons">Send Application</a>
+
+			</div>
+
+		</form>
+
+	</section>
+
+</body>
+
+<footer>
+	
+	<p &copy:>2023: José Gustavo Sepúlveda Sevilla codes©</p>
+
+</footer>
+
+</html>

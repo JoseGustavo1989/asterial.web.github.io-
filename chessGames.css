@@ -103,44 +103,159 @@ header{
 	transition: all 0.4s;
 }
 
-/* BLOG */
+/* GAMES */
 
-#blog{
+#games{
 	padding: 50px 50px;
-	display: block;
-	justify-content: center;
+	background: url(./utils/chessBackground.jpg) no-repeat center center/cover;;
 }
 
-
-#blog div{
-	padding: 30px 30px;
+.blanca,.negra{
+	position: relative;
+	width: 4em;
+	height: 4em;
+	display: inline-block;
+	padding: .2em; 
 }
 
-#blog div h4{
-	color: #0a130e;
-	font-size: 20px;
-	margin: 15px 0px;
+.blanca{
+	background: #e1ce93;
+	border: 2px solid #3f2817;
+}
+
+.negra{
+  	background: #c19a6a;
+  	border: 2px solid #3f2817;
+}
+
+#tablero{
+	margin: 0;
+	padding: 0;
+	z-index: 0;
+	width: auto;
+	-webkit-user-select:none;
+	-moz-user-select:none
+}
+
+.ficha{
+	position: absolute;
+	width: 2.2em;
+	height: 3.5em;
+	margin-left:0.6em; 
+	margin-top:0.2em;
+	z-index: 100;
+    cursor:pointer;
+    margin-left: 1em;   
+}
+
+/*#matadas{
+	position: relative;
+	width: 20em;
+	max-width: 20em;
+	height: 20em;
+	border: 1px solid black;
+	box-shadow: 2px 2px 4px #000;
+}*/
+
+#info{
+	position: relative;
+	width: 20em;
+	max-width: 20em;
+	height: 20em;
+	border: 1px solid black;
+	background:-moz-linear-gradient(#525050,#111);
+	background:-webkit-linear-gradient(#525050,#111);
 	text-align: center;
+	box-shadow: 2px 2px 4px #000;
+	font-family: ev;
 }
 
-#blog div h2{
-	color: #0a130e;
-	font-size: 18px;
-	margin: 15px 0px;
-	text-align: center;
+#info span{
+font-size: 3em;
 }
 
-#blog div p{
-	color: #15261d;
-	font-size: 15px;
-	text-align: justify-all;
+#info img{
+	margin-top:1.4em;
 }
 
-#blog div li{
-	color: #15261d;
-	font-size: 15px;
-	text-align: justify-all;
+#tablero,#matadas,#info{
+	display: inline-block;
+	vertical-align: top;
 }
+
+#matadas img{
+	width: 2.5em;
+	height: 3.5em;
+}
+
+#coronadaB,#coronadaN{
+	position: absolute;
+	left:10em;
+	top: 0;
+	width: 16em;
+	height: 5em;
+	box-shadow: 2px 2px 5px #000;
+	background: #333;
+	display: none;
+	z-index: 2000;
+	border: 3px solid #000;
+}
+
+#coronadaN{
+	top:32.5em;
+	background: #DDD;
+}
+
+#coronadaB img,#coronadaN img{
+	position: relative;
+	display: inline;
+	margin-left: 1em;
+	margin-top: .5em;
+	cursor: pointer;
+}
+
+#coronadaB .torre,#coronadaN .torre{
+	position: absolute;
+	left: 1em;
+}
+
+#coronadaB .caballo,#coronadaN .caballo{
+	position: absolute;
+	left: 4em;
+}
+
+#coronadaB .alfil,#coronadaN .alfil{
+	position: absolute;
+	left: 7em;
+}
+
+#coronadaB .reina,#coronadaN .reina{
+	position: absolute;
+	left: 10em;
+}
+
+#coronadaB img:hover,#coronadaN img:hover{
+	opacity: 0.7;
+}
+
+/*#turnos{
+	position: absolute;
+	width: 40.5em;
+	height:10em;
+	background:#222; 
+	top:21em;
+	left: 39.4em;
+}*/
+
+#turnos p {
+	margin-left: 1.5em;
+	margin-top: 1.3em;
+	color: #3B1E00;
+	font-family: ev;
+	font-size: 2.6em;
+}
+
+/* Buttons */
 
 .buttons{
 	display: inline-block;
@@ -157,6 +272,7 @@ header{
 	background: #6cc091;
 	color: #FFF;
 }
+
 
 /* Icons */
 
@@ -202,7 +318,6 @@ header{
 	color: #FFF;
 	font-size: 20px;
 	font-weight: 100;
-	margin: 10px 0px;
 	transition: 0.4s;
 }
 
@@ -348,26 +463,50 @@ footer{
 		right: 0;
 	}
 
-	/* Blog */
-	#blog{
-		flex-direction: column;
-		font-size: 13px;
+	/* Games */
+
+	#games{
+		align-items: center;
+		padding: 0px 20px;
 	}
 
-	#blog div p{
-		font-size: 13px;
+#tablero{
+			margin-top: 50px;
+	 		width: 330px;
+	 		height: 360px;
+	 		align-items: center;
+	 }
+
+	.blanca,.negra{
+		position: relative;
+		width: 7%;
+		height: 7%;
+		border: 1px solid #000000;
+		align-items: center;
 	}
 
-	#blog div li{
-		font-size: 13px;
+	#info,#matadas{
+		margin-left: 5%;
+		margin-top: -8%;
+	}
+	.ficha{
+	position: absolute;
+	width: 0.8em;
+	height: 1.4em;
+	margin-left:0.6em; 
+	margin-top:0.2em;
+	z-index: 100;
+    cursor:pointer;
+    margin-left: 0.35em;   
+}
+	
+	#turnos{
+		display: none;
 	}
 
-	#blog h4{
-		font-size: 13px;
-	}
-
-	#blog h2{
-		font-size: 13px;
+	#info,#matadas{
+		margin-left:5%;
+		margin-top:8%;
 	}
 
 	/* Icons */
@@ -385,7 +524,6 @@ footer{
 	}
 }
 
-
 @media(max-width: 280px){
 
 	/* Header */
@@ -393,23 +531,36 @@ footer{
 		font-size: 18px;
 	}
 
-	/* Blog */
+	/* Games */
 
-	#blog div p{
-		font-size: 13px;
+ #tablero{
+	 	width: 260px;
+	 	height: 290px;
+ }
+
+ #info,#matadas{
+ 	display: block;
+ }
+
+ 	.ficha{
+	position: absolute;
+	width: 0.8em;
+	height: 1.1em;
+	margin-left:0.6em; 
+	margin-top:0.2em;
+	z-index: 100;
+    cursor:pointer;
+    margin-left: 0.25em;   
+}
+
+	.blanca,.negra{
+		position: relative;
+		width: 7%;
+		height: 7%;
+		border: 1px solid #000000;
 	}
 
-	#blog div li{
-		font-size: 13px;
-	}
 
-	#blog h4{
-		font-size: 13px;
-	}
-
-	#blog h2{
-		font-size: 13px;
-	}
 
 	/* Icons */
 
@@ -426,3 +577,4 @@ footer{
 	}
 
 }
+

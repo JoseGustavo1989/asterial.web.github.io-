@@ -342,6 +342,10 @@ footer{
 		flex-direction: column;
 	}
 
+	#games img{
+		width: 30%;
+	}
+
 	/* Icons */
 	.containtIcons{
 		flex-direction: column;

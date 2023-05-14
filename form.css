@@ -280,6 +280,12 @@ form input::placeholder, form textarea::placeholder{
 	background: #4fa776ad;
 }
 
+/* BLOG */
+
+#formSection div p{
+	font-size: 16px;
+}
+
 /* Footer */
 
 footer{
@@ -330,7 +336,7 @@ footer{
 	}
 
 	/* Application Form */
-	#people{
+	.dataForm{
 		flex-direction: column;
 	}
 
@@ -345,11 +351,11 @@ footer{
 
 	/* Application form */
 	#formSection div h1{
-		font-size: 18px;
+		font-size: 28px;
 	}
 
 	#formSection div p{
-		font-size: 8px;
+		font-size: 11px;
 	}
 }
 
@@ -363,11 +369,11 @@ footer{
 	/* Application Form */
 	
 	#formSection div h1{
-		font-size: 18px;
+		font-size: 20px;
 	}
 
 	#formSection div p{
-		font-size: 8px;
+		font-size: 12px;
 	}
 
 	/* Icons */

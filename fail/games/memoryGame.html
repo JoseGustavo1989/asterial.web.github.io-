@@ -7,11 +7,13 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE-edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel = "stylesheet" href = "form.css">
+	<link rel = "stylesheet" href = "memoryGame.css">
+	<script src="mainMemoryGame.js"></script>
+	<script src="https://kit.fontawesome.com/e3cd12edda.js" crossorigin="anonymous"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
-	<title>Successful Test! - Asterial</title>
+	<title>Memory Game - Asterial</title>
 
 </head>
 
@@ -46,23 +48,62 @@
 		
 		<div class="containtBanner">
 			
-			<h3><span>APPLICATION FORM: </span>WEB DESING RESPONSIVE <br> MOBILE FRIENDLY</h3>
-			<a href="https://youtu.be/xw3C03Ba8Dk" class="buttonBegin">BEGIN TRAVEL</a>
+			<h3><span>MEMORY GAME (NUMBERS): </span><br>WEB DESING RESPONSIVE <br> MOBILE FRIENDLY</h3>
+			<a class="buttonBegin">BEGIN THE TRAVEL</a>
 
 		</div>
 
 	</section>
 
-	<section id="formSection">
+	<main id="memoryGame">
 		
-		<div>
+		<section class="gaming_buttons">
 			
-			<h1>Thank You!</h1>
-			<p>Thank you for filling out the form, this page does not collect your information, unfortunately this page is only a beta version. We keep working...</p>
-			
-		</div>
+			<h1 class="gaming_title">MEMORY GAME</h1>
 
-	</section>
+			<table>
+				
+				<tr>	
+					<td><button id="button0" onclick="reveal(0)"></button></td>
+					<td><button id="button1" onclick="reveal(1)"></button></td>
+					<td><button id="button2" onclick="reveal(2)"></button></td>
+					<td><button id="button3" onclick="reveal(3)"></button></td>
+				</tr>
+
+				<tr>	
+					<td><button id="button4" onclick="reveal(4)"></button></td>
+					<td><button id="button5" onclick="reveal(5)"></button></td>
+					<td><button id="button6" onclick="reveal(6)"></button></td>
+					<td><button id="button7" onclick="reveal(7)"></button></td>
+				</tr>
+
+				<tr>	
+					<td><button id="button8" onclick="reveal(8)"></button></td>
+					<td><button id="button9" onclick="reveal(9)"></button></td>
+					<td><button id="button10" onclick="reveal(10)"></button></td>
+					<td><button id="button11" onclick="reveal(11)"></button></td>
+				</tr>
+
+				<tr>	
+					<td><button id="button12" onclick="reveal(12)"></button></td>
+					<td><button id="button13" onclick="reveal(13)"></button></td>
+					<td><button id="button14" onclick="reveal(14)"></button></td>
+					<td><button id="button15" onclick="reveal(15)"></button></td>
+				</tr>
+
+			</table>
+
+		</section>
+
+		<section class="gaming_stat">
+			
+			<h2 id="hits" class="stats">Hits: 0</h2>
+			<h2 id="timer" class="stats">Timer: 30 sec</h2>
+			<h2 id="moves" class="stats">Moves: 0</h2>
+
+		</section>
+
+	</main>
 
 	<section id="icons">
 		
@@ -91,14 +132,14 @@
 		<div class="buttonIcons">
 
 			<a href="index.html" class="buttons">Go Home...</a>
-
+			
 		</div>
 
 	</section>
 
 	<section id="contacts">
 		
-		<!--<h4>Contact application form</h4>
+		<h4>Contact application form</h4>
 
 		<form action="a">
 			
@@ -136,7 +177,7 @@
 
 			</div>
 
-		</form>-->
+		</form>
 
 	</section>
 

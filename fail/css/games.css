@@ -103,43 +103,32 @@ header{
 	transition: all 0.4s;
 }
 
-/* BLOG */
+/* GAMES */
 
-#blog{
+#games{
 	padding: 50px 50px;
-	display: block;
+	display: flex;
 	justify-content: center;
+	text-align: center;
 }
 
+#games img{
+	width: 25%;
+}
 
-#blog div{
+#games div{
 	padding: 30px 30px;
 }
 
-#blog div h4{
-	color: #0a130e;
+#games div h4{
+	color: #4d4d5c;
 	font-size: 20px;
 	margin: 15px 0px;
-	text-align: center;
 }
 
-#blog div h2{
-	color: #0a130e;
+#games div p{
+	color: #4d4d5c87;
 	font-size: 18px;
-	margin: 15px 0px;
-	text-align: center;
-}
-
-#blog div p{
-	color: #15261d;
-	font-size: 15px;
-	text-align: justify-all;
-}
-
-#blog div li{
-	color: #15261d;
-	font-size: 15px;
-	text-align: justify-all;
 }
 
 .buttons{
@@ -157,6 +146,7 @@ header{
 	background: #6cc091;
 	color: #FFF;
 }
+
 
 /* Icons */
 
@@ -202,7 +192,6 @@ header{
 	color: #FFF;
 	font-size: 20px;
 	font-weight: 100;
-	margin: 10px 0px;
 	transition: 0.4s;
 }
 
@@ -348,26 +337,9 @@ footer{
 		right: 0;
 	}
 
-	/* Blog */
-	#blog{
+	/* Games */
+	#games{
 		flex-direction: column;
-		font-size: 13px;
-	}
-
-	#blog div p{
-		font-size: 13px;
-	}
-
-	#blog div li{
-		font-size: 13px;
-	}
-
-	#blog h4{
-		font-size: 13px;
-	}
-
-	#blog h2{
-		font-size: 13px;
 	}
 
 	/* Icons */
@@ -385,7 +357,6 @@ footer{
 	}
 }
 
-
 @media(max-width: 280px){
 
 	/* Header */
@@ -393,22 +364,9 @@ footer{
 		font-size: 18px;
 	}
 
-	/* Blog */
-
-	#blog div p{
-		font-size: 13px;
-	}
-
-	#blog div li{
-		font-size: 13px;
-	}
-
-	#blog h4{
-		font-size: 13px;
-	}
-
-	#blog h2{
-		font-size: 13px;
+	/* Games */
+	#games{
+		font-size: 8px;
 	}
 
 	/* Icons */
