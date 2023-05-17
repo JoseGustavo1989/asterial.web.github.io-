@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel = "stylesheet" href = "playlist.css">
+	<script src="https://kit.fontawesome.com/e3cd12edda.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+	<title>Playlist - Asterial</title>
+
+</head>
+
+<body>
+	
+	<header>
+		
+		<h2 class="logo">Asterial©</h2>
+		<input type="checkbox" id="check">
+		<label for="check" class="showingMenu">
+			
+			&#8801
+
+		</label>
+
+			<nav class="menu">
+
+		<a href="index.html">Home</a>
+		<a href="games.html">Games</a>
+		<a href="blog.html">Blog</a>
+		<label for="check" class="hiddenMenu">
+			
+			&#215
+
+		</label>
+
+		</nav>
+
+	</header>
+	
+	<section id="banner">
+		
+		<div class="containtBanner">
+			
+			<h3><span>PLAYLIST: </span>WEB DESING RESPONSIVE <br> MOBILE FRIENDLY</h3>
+			<a class="buttonBegin">BEGIN TRAVEL</a>
+
+		</div>
+
+	</section>
+
+	<section id="music">
+
+		<main class="player">
+			
+			<h1 class="title">New Song</h1>
+
+			<img src="./utils/icon_cover.svg" class="iconCover">
+
+			<div class="progressContainer">
+
+    			<section class="progress"></section>
+
+   				<div class="progress"></div>
+
+			</div>
+
+			<section class="controls">
+				
+				<button class="prev">
+
+					<i class="fa-solid fa-backward"></i>
+
+				</button>
+
+				<button class="play">
+
+					<i class="fa-solid fa-play"></i>
+
+				</button>
+
+				<button class="next">
+
+					<i class="fa-solid fa-forward"></i>
+
+				</button>
+
+			</section>
+
+			<ul class="songs" id="songs">
+
+				<li><a href="#">All them witches - Elk blood heart</a></li>
+				<li><a href="#">Best Frenz - Ugly Ending</a></li>
+				<li><a href="#">Billie Eilish - Oxytocin</a></li>
+				<li><a href="#">Clams Casino - I am God</a></li>
+				<li><a href="#">Depeche Mode - Soothe My Soul</a></li>
+				<li><a href="#">Filter - Hey Man Nice Shot</a></li>
+				<li><a href="#">Fink - Pilgrim</a></li>
+				<li><a href="#">Lord Huron - Meet me in the Woods</a></li>
+				<li><a href="#">Lorn - Acid Rain</a></li>
+				<li><a href="#">Massive Attack - Silent SpringI</a></li>
+				<li><a href="#">My Chemical Mary - Candy Cemetery</a></li>
+				<li><a href="#">My Chemical Mary - Romance Cemetery</a></li>
+				<li><a href="#">My Chemical Mary - The Summer in the Air</a></li>
+				<li><a href="#">Polo & Pan - Dorothy</a></li>
+				<li><a href="#">Queens Of The Stone Age - Make It Wit Chu</a></li>
+				<li><a href="#">Radiohead - The National Anthem</a></li>
+				<li><a href="#">The Church - Numbers</a></li>
+				<li><a href="#">The Rubens - I will Surely Die</a></li>
+				<li><a href="#">The xx - Swept Away</a></li>
+				<li><a href="#">Two Feet - Devil</a></li>
+				<li><a href="#">X Ambassadors - Beautiful Liar</a></li>
+
+			</ul>
+
+			<script src="playlist.js"></script>
+
+		</main>
+
+	</section>
+
+	<section id="icons">
+		
+		<div class="containtIcons">
+			
+			<div id="iconHome">
+				<img src="./utils/icon_home.svg">
+				<a href="index.html"><h6>Home</h6></a>
+				<p></p>
+			</div>
+
+			<div id="iconGames">
+				<img src="./utils/icon_games.svg">
+				<a href="games.html"><h6>Games</h6></a>
+				<p></p>
+			</div>
+
+			<div id="iconBlog">
+				<img src="./utils/icon_blog.svg">
+				<a href="blog.html"><h6>Blog</h6></a>
+				<p></p>
+			</div>
+
+		</div>
+
+		<div class="buttonIcons">
+
+			<a href="index.html" class="buttons">Go Home...</a>
+			
+		</div>
+
+	</section>
+
+	<section id="contacts">
+		
+		<h4>Contact application form</h4>
+
+		<form action="a">
+			
+			<div class="dataForm">
+
+				<div class="nameForm">
+
+					<label for="identificationName">Name / Last Name</label>
+
+					<input type="text" name="identificationName" id="identificationName" placeholder="Name / Last Name">
+				
+				</div>
+
+				<div class="email">
+
+					<label for="identificationEmail">@email</label>
+
+					<input type="email" name="identificationEmail" id="identificationEmail" placeholder="example@email.com">
+				
+				</div>
+			
+			</div>
+
+			<div class="message">
+
+				<label for="identificationMessage">Message</label>
+
+				<textarea name="identificationMessage" id="identificationMessage" cols="30" rows="10" placeholder="Message..."></textarea>
+				
+			</div>
+
+			<div class="buttonSend">
+				
+				<a href="form.html" class="buttons">Send Application</a>
+
+			</div>
+
+		</form>
+
+	</section>
+
+</body>
+
+<footer>
+	
+	<p &copy:>2023: José Gustavo Sepúlveda Sevilla codes©</p>
+
+</footer>
+
+</html>
